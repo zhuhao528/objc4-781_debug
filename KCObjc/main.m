@@ -25,7 +25,10 @@ int main(int argc, const char * argv[]) {
         [LGPerson TestClassMethod];
         
         /// 消息转发流程 直接消息转发会崩溃
-        ((void (*)(id,SEL))_objc_msgForward)([LGPerson new],@selector(test));
+//      ((void (*)(id,SEL))_objc_msgForward)([LGPerson new],@selector(test));
+        
+        /// 消息转发
+        [person forwardMethod];
     }
     return 0;
 }

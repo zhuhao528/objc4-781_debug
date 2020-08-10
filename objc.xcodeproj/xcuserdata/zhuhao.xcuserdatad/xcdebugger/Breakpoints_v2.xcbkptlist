@@ -26,28 +26,39 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FAD042C0-0DE1-441F-8C76-EE9D9C856F37"
+            uuid = "CBC193D7-3D3D-48CF-B5E2-3F9522C32D5E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "*0x100000b55">
+            filePath = "KCObjc/main.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "B04D9DC5-FC79-460B-B8F2-5F5F718CFC13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x100000b85">
             <Locations>
                <Location
-                  uuid = "FAD042C0-0DE1-441F-8C76-EE9D9C856F37 - 8f8c313fd103b551"
+                  uuid = "B04D9DC5-FC79-460B-B8F2-5F5F718CFC13 - 19a9ccf87476ab"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "main"
                   moduleName = "KCObjc"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhuhao/Desktop/zhuhao/%E6%BA%90%E7%A0%81/objc4-781_debug/KCObjc/main.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "101">
+                  offsetFromSymbolStart = "85">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -9,7 +9,7 @@
 
 @implementation NSObject (Test)
 
-+ (void)TestClassMethod{
+- (void)TestClassMethod{
     NSLog(@"test------");
 }
 

@@ -33,6 +33,7 @@
 
 /* Begin PBXBuildFile section */
 		3696B02524E04EB500B0DBCD /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696B02424E04EB500B0DBCD /* NSObject+Test.m */; };
+		3696B03824E14DFA00B0DBCD /* ForwardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696B03724E14DFA00B0DBCD /* ForwardClass.m */; };
 		393CEAC00DC69E3E000B69DE /* objc-references.mm in Sources */ = {isa = PBXBuildFile; fileRef = 393CEABF0DC69E3E000B69DE /* objc-references.mm */; };
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
@@ -168,6 +169,8 @@
 /* Begin PBXFileReference section */
 		3696B02324E04EB500B0DBCD /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
 		3696B02424E04EB500B0DBCD /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
+		3696B03624E14DFA00B0DBCD /* ForwardClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardClass.h; sourceTree = "<group>"; };
+		3696B03724E14DFA00B0DBCD /* ForwardClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardClass.m; sourceTree = "<group>"; };
 		393CEABF0DC69E3E000B69DE /* objc-references.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-references.mm"; path = "runtime/objc-references.mm"; sourceTree = "<group>"; };
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
@@ -394,6 +397,8 @@
 				7A88076624CACD8C0070C15B /* LGPerson.m */,
 				3696B02324E04EB500B0DBCD /* NSObject+Test.h */,
 				3696B02424E04EB500B0DBCD /* NSObject+Test.m */,
+				3696B03624E14DFA00B0DBCD /* ForwardClass.h */,
+				3696B03724E14DFA00B0DBCD /* ForwardClass.m */,
 			);
 			path = KCObjc;
 			sourceTree = "<group>";
@@ -733,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3696B03824E14DFA00B0DBCD /* ForwardClass.m in Sources */,
 				7A88076124CACD200070C15B /* main.m in Sources */,
 				3696B02524E04EB500B0DBCD /* NSObject+Test.m in Sources */,
 				7A88076724CACD8C0070C15B /* LGPerson.m in Sources */,
@@ -845,6 +851,7 @@
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
 				LLVM_LTO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
@@ -922,6 +929,7 @@
 				);
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
@@ -1009,6 +1017,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=x86_64]" = "-fobjc-legacy-dispatch";
 				OTHER_CPLUSPLUSFLAGS = (
@@ -1054,6 +1063,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "-momit-leaf-frame-pointer";
 				"OTHER_CFLAGS[arch=x86_64]" = (
 					"-momit-leaf-frame-pointer",
@@ -1124,7 +1134,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1174,7 +1184,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

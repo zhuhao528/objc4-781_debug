@@ -11,10 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LGPerson : NSObject
 
+/// 动态解析
 - (void)test;
 
 // 类方法
 + (void)TestClassMethod;
+
+// 消息转发
+- (void)forwardMethod;
 
 @end
 
